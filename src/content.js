@@ -1,7 +1,7 @@
 function copyJobDescription() {
     const jobDetailsElement = document.getElementById('job-details');
     if (jobDetailsElement) {
-      const jobDescription = jobDetailsElement.innerText;
+      const jobDescription = document.querySelector('.jobs-details__main-content').innerText;
       navigator.clipboard.writeText(jobDescription).then(function() {
         console.log('Job description copied to clipboard');
       }).catch(function(err) {

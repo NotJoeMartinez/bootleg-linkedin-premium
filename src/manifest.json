@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "LinkedIn Job Description Copier",
+  "name": "Bootleg LinkedIn Premium",
   "version": "1.1",
-  "description": "Copies LinkedIn job descriptions to clipboard",
+  "description": "A firefox plugin that does some LinkedIn premiumium stuff",
   "permissions": ["activeTab", "clipboardWrite", "contextMenus"],
   "browser_action": {
     "default_popup": "popup.html"
