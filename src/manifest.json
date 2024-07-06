@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "LinkedIn Job Description Copier",
+  "version": "1.1",
+  "description": "Copies LinkedIn job descriptions to clipboard",
+  "permissions": ["activeTab", "clipboardWrite", "contextMenus"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/jobs/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
